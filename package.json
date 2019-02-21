@@ -1,0 +1,23 @@
+{
+    "name": "cross-eval",
+    "version": "1.0.0",
+    "description": "",
+    "private": true,
+    "bin": {
+        "cross-eval": "src/cli.js"
+    },
+    "author": "Alessio Paccoia <alessio.paccoia@cubbit.io>",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/alessiopcc/cross-eval.git"
+    },
+    "scripts": {
+        "pack": "node -e require('./scripts/publish.js').pack()",
+        "publish": "node -e require('./scripts/publish.js').publish()"
+    },
+    "devDependencies": {
+        "fs-extra": "^7.0.1",
+        "rimraf": "^2.6.3"
+    }
+}
